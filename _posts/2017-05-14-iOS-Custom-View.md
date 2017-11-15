@@ -2,6 +2,15 @@
 layout: post
 title:  "커스텀 뷰 만드는 법"
 date:   2017-05-14 13:14:42 +0900
+description: Template description
+image: {{ site.url }}/blog/images/iOS/Custom-View/009.png
+category: 'template'
+tags:
+- ios
+- swift
+- view
+twitter_text: template twitter_text
+introduction: template introduction
 ---
 
 ![image001]({{ site.url }}/blog/images/iOS/Custom-View/001.png)

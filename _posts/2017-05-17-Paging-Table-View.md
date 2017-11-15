@@ -2,6 +2,15 @@
 layout: post
 title:  "Cell의 높이가 변하는 테이블 뷰 만들기"
 date:   2017-05-17 15:44:46 +0900
+description: Template description
+image: 'http://res.cloudinary.com/dm7h7e8xj/image/upload/v1504810464/hello-world-vue_ibatoy.jpg'
+category: 'template'
+tags:
+- ios
+- swift
+- uitableview
+twitter_text: template twitter_text
+introduction: template introduction
 ---
 
 <img src="{{ site.url }}/blog/images/iOS/Paging-Table-View/902.png" width="300">
