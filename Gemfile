@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
 
 gem 'rouge'
-gem 'jekyll'
+gem "jekyll", "~> 3.6.0"
 gem 'jemoji'
