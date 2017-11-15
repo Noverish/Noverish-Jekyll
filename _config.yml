@@ -2,23 +2,20 @@
 title: Noverish Blog
 email: embrapers273@gmail.com
 description:  Noverish's iOS & Server development story blog
-baseurl: "/Users/noverish/Documents/jekflix-template/_site" # the subpath of your site, e.g. /blog
-url: "file://" # the base hostname & protocol for your site
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "http://noverish.me" # the base hostname & protocol for your site
 google_analytics: "UA-XXXXXXXX-X"
 
 # User Settings
 username: Noverish's Blog
-user_description: Some text about you.
+user_description: Korea University Junior, iOS & Server Developer
 disqus_username: disqus_username
 
 # Social Media
 # Remove the item if you don't need it
 github_username: Noverish
 facebook_username: facebook_username
-twitter_username: twitter_username
-instagram_username: instagram_username
-linkedin_username: linkedin_username
-medium_username: medium_username
+twitter_username: Noverish
 
 # Build settings
 markdown: kramdown

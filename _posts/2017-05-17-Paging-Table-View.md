@@ -3,8 +3,8 @@ layout: post
 title:  "Cell의 높이가 변하는 테이블 뷰 만들기"
 date:   2017-05-17 15:44:46 +0900
 description: Template description
-image: 'http://res.cloudinary.com/dm7h7e8xj/image/upload/v1504810464/hello-world-vue_ibatoy.jpg'
-category: 'template'
+image: 'http://noverish.me/blog/images/logo/swift.jpg'
+category: 'swift'
 tags:
 - ios
 - swift

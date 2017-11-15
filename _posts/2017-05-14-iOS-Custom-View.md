@@ -3,8 +3,8 @@ layout: post
 title:  "커스텀 뷰 만드는 법"
 date:   2017-05-14 13:14:42 +0900
 description: Template description
-image: {{ site.url }}/blog/images/iOS/Custom-View/009.png
-category: 'template'
+image: 'http://noverish.me/blog/images/logo/swift.jpg'
+category: 'swift'
 tags:
 - ios
 - swift
