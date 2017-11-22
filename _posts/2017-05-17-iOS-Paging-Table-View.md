@@ -10,7 +10,6 @@ tags:
 - swift
 - uitableview
 twitter_text: template twitter_text
-introduction: template introduction
 ---
 
 <img src="{{ site.url }}/blog/images/iOS/Paging-Table-View/902.png" width="300">

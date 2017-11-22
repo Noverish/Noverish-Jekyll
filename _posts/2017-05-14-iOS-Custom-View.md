@@ -10,7 +10,6 @@ tags:
 - swift
 - view
 twitter_text: template twitter_text
-introduction: template introduction
 ---
 
 ![image001]({{ site.url }}/blog/images/iOS/Custom-View/001.png)
