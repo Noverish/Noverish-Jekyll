@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Kotlin과 Firebase(FCM)를 사용하여 Android에 푸쉬 알림 보내기"
+title:  "Kotlin과 Firebase를 사용하여 Android에 푸쉬 알림 보내기 - 클라이언트 편"
 date:   2018-01-07 16:49:19 +0900
 description: Template description
 image: 'http://noverish.me/blog/assets/img/logos/kotlin-firebase.jpg'
@@ -186,3 +186,9 @@ Target을 Single device로 바꾼 뒤 token값을 아까 복사 한 걸 붙여�
 
 <img src="../images{{ page.id }}/023.jpg" width="300">
 그러면 이렇게 성공적으로 푸쉬가 옵니다!
+<br>
+<br>
+
+물론 실제 서비스 할 때 이렇게 일일히 콘솔로 들어가서 손으로 푸쉬 알림을 보낼 순 없겠죠?    
+당연히 Firebase에는 여러가지 방법을 사용해서 푸쉬 알림을 보내는 기능을 제공합니다.    
+그럼 다음 포스팅에는 이 방법들을 사용해서 앱에 푸쉬를 보내는 방법을 알려드리도록 하겠습니다.
