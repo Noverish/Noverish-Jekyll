@@ -13,23 +13,23 @@ tags:
 twitter_text: template twitter_text
 ---
 
-![image001]({{ site.url }}/blog/images/iOS/Naver-Clova-Speech-Synthesis/001.png)
+![image001](../images{{ page.id }}/001.png)
 
 1\. `CSSTest`라는 이름의 프로젝트를 만듭니다. 여기서 Bundle Identifier는 뒤에서 쓰이니 기억해둡시다.
 
-![image002]({{ site.url }}/blog/images/iOS/Naver-Clova-Speech-Synthesis/002.png)
+![image002](../images{{ page.id }}/002.png)
 
 2\. [네이버 개발자 센터](https://developers.naver.com/main/)에 가서 새로운 어플리케이션을 등록하는 페이지로 갑니다.
 
-![image003]({{ site.url }}/blog/images/iOS/Naver-Clova-Speech-Synthesis/003.png)
+![image003](../images{{ page.id }}/003.png)
 
 3\. 휴대폰 인증을 하고 회사 이름은 아무거나 적어줍시다.
 
-![image004]({{ site.url }}/blog/images/iOS/Naver-Clova-Speech-Synthesis/004.png)
+![image004](../images{{ page.id }}/004.png)
 
 4\. 어플리케이션 이름은 아무거나 적어도 상관 없습니다. 저는 `CSSTest` 라고 적었습니다. 그리고 사용 API에 `Clova Speech Synthesis`를 선택하고 iOS환경을 추가해서 1번의 Bundle Identifier를 적습니다.
 
-![image005]({{ site.url }}/blog/images/iOS/Naver-Clova-Speech-Synthesis/005.png)
+![image005](../images{{ page.id }}/005.png)
 
 5\. 그러고 나면 이렇게 Client ID와 Client Secret이 보이는 페이지로 넘어갑니다. 이 두 개는 뒤에서 쓰이니 기억해둡시다.
 

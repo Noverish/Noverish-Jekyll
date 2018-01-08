@@ -12,7 +12,7 @@ tags:
 twitter_text: template twitter_text
 ---
 
-![image001]({{ site.url }}/blog/images/iOS/Audio-From-Web/001.png)
+![image001](../images{{ page.id }}/001.png)
 
 1\. 프로젝트의 `Info.plist`에 `App Transport Security Settings`를 추가합니다. 그리고 그 안에 `Allow Arbitrary Loads`를 추가하고 그 값을 `YES`로 바꿔줍니다.
 
