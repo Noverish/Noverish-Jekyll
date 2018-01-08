@@ -12,7 +12,7 @@ tags:
 twitter_text: template twitter_text
 ---
 
-<img src="../images{{ page.id }}/902.png" width="300">
+<img src="../images{{ page.id }}/023.jpg" width="300">
 
 이렇게 각 셀의 높이가 서로 다른 테이블 뷰를 만드려고 합니다.
 
@@ -20,10 +20,10 @@ twitter_text: template twitter_text
 ## item 파일 만들기
 각각의 셀의 정보를 담고 있는 item파일을 만듭시다
 
-![image001](../images{{ page.id }}/001.png)
+![image001](../images{{ page.id }}/000.jpg)
 1. Swift파일을 하나 만듭니다
 
-![image002](../images{{ page.id }}/002.png)
+![image002](../images{{ page.id }}/001.jpg)
 2. TestItem 이라고 이름을 붙였습니다
 
 ```swift
@@ -41,10 +41,10 @@ class TestItem {
 ## Cell.swift 파일 만들기
 각각의 셀의 swift파일 만듭시다
 
-![image101](../images{{ page.id }}/101.png)
+![image101](../images{{ page.id }}/002.jpg)
 1. Cocoa Touch Class를 하나 만든 다음에
 
-![image102](../images{{ page.id }}/102.png)
+![image102](../images{{ page.id }}/003.jpg)
 2. Subclass of는 UICollectionViewCell을 선택하고 TestCell을 사용했습니다.
 
 ```swift
@@ -79,59 +79,59 @@ measureView는 각의 cell의 높이를 구할 때 사용하는 테스트용 Cel
 ## Cell.xib 파일 만들기
 각각의 셀의 xib파일 만듭시다
 
-![image201](../images{{ page.id }}/201.png)
+![image201](../images{{ page.id }}/004.jpg)
 1. Empty xib파일을 하나 만듭니다
 
-![image202](../images{{ page.id }}/202.png)
+![image202](../images{{ page.id }}/005.jpg)
 2. TestCell이라고 swift파일의 이름과 똑같이 붙였습니다
 
-![image203](../images{{ page.id }}/203.png)
+![image203](../images{{ page.id }}/006.jpg)
 3. CollectionViewCell을 넣습니다
 
-![image204](../images{{ page.id }}/204.png)
+![image204](../images{{ page.id }}/007.jpg)
 4. 그 안에 View를 넣습니다
 
-![image205](../images{{ page.id }}/205.png)
+![image205](../images{{ page.id }}/008.jpg)
 5. 이 View의 constraint를 위와 같이 합니다
 
-![image206](../images{{ page.id }}/206.png)
+![image206](../images{{ page.id }}/009.jpg)
 6. label을 2개 넣습니다
 
-![image207](../images{{ page.id }}/207.png)
+![image207](../images{{ page.id }}/010.jpg)
 7. 두 label의 폰트와 폰트 색과 폰트 크기와 배경등을 적당히 하고
 **Lines를 0으로 해야 합니다!**
 
-![image208](../images{{ page.id }}/208.png)
+![image208](../images{{ page.id }}/011.jpg)
 8. Title label의 constraint를 위와 같이 합니다
 
-![image209](../images{{ page.id }}/209.png)
+![image209](../images{{ page.id }}/012.jpg)
 9. Content label의 constraint를 위와 같이 합니다
 
-![image210](../images{{ page.id }}/210.png)
+![image210](../images{{ page.id }}/013.jpg)
 10. 그러면 위와 같이 빨간색으로 conflict가 생겼다고 할 겁니다
 
-![image211](../images{{ page.id }}/211.png)
+![image211](../images{{ page.id }}/014.jpg)
 11. CollectionViewCell을 선택해서 적당히 conflict가 없어지는 Height로 설정합니다.
 
-![image212](../images{{ page.id }}/212.png)
+![image212](../images{{ page.id }}/015.jpg)
 12. 가장 root인 View의 width constraint를 넣습니다.
 
-![image213](../images{{ page.id }}/213.png)
+![image213](../images{{ page.id }}/016.jpg)
 13. CollectionViewCell을 선택하고 Class를 TestCell로 합니다.
 
-![image214](../images{{ page.id }}/214.png)
+![image214](../images{{ page.id }}/017.jpg)
 14. titleLabel과 contentLabel과 width를 outlet과 연결합니다
 
 ## TestTableView 만들기
 이제 이 셀들을 보여주는 TableView 가 필요합니다.
 
-![image215](../images{{ page.id }}/215.png)
+![image215](../images{{ page.id }}/018.jpg)
 1. 우리는 PagingTableView를 사용 할 겁니다. 이건 제가 만든 건데 어떻게 구현 되어 있는지는 이해 안 하셔도 됩니다.
 
-![image216](../images{{ page.id }}/216.png)
+![image216](../images{{ page.id }}/019.jpg)
 2. Swift파일을 만듭니다
 
-![image217](../images{{ page.id }}/217.png)
+![image217](../images{{ page.id }}/020.jpg)
 3. TestTableView라고 이름을 붙였습니다.
 
 ```swift
@@ -210,7 +210,7 @@ page가 주어지면 이 page가지고 Item을 만들어서 callback함수를 �
 
 
 
-![image301](../images{{ page.id }}/301.png)
+![image301](../images{{ page.id }}/021.jpg)
 1. Main.storyboard에 적당히 색을 칠한 view를 넣고 CustomClass를 TestTableView로 합니다.
 
 ```swift
@@ -237,8 +237,8 @@ ViewController파일에 위와 같이 하고 testTabelView와 storyboard상의 �
 
 ## 결과
 
-<img src="../images{{ page.id }}/901.png" width="300">
+<img src="../images{{ page.id }}/022.jpg" width="300">
 columnNum이 2일 경우
 
-<img src="../images{{ page.id }}/902.png" width="300">
+<img src="../images{{ page.id }}/023.jpg" width="300">
 columnNum이 1일 경우
