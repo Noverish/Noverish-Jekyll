@@ -1,5 +1,3 @@
 source 'https://rubygems.org'
 
-gem 'rouge'
-gem "jekyll", "~> 3.6.0"
-gem 'jemoji'
+gem "jekyll", "3.7.2"
