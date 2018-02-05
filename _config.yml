@@ -24,7 +24,6 @@ permalink: /:title/
 
 # Plugins
 plugins:
-  - jemoji
 
 # Links to include in menu navigation
 # For external links add external: true
