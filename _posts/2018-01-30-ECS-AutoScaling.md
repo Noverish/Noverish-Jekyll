@@ -3,7 +3,7 @@ layout: post
 title:  "EC2 Container Service(ECS) 사용하기 + AutoScaling"
 date:   2018-01-30 16:31:30 +0900
 description: Template description
-image: 'http://noverish.me/blog/assets/img/logos/ecs-nodejs.jpg'
+image: '/blog/assets/img/logos/ecs.jpg'
 category: 'server'
 tags:
 - aws
@@ -12,11 +12,11 @@ tags:
 twitter_text: template twitter_text
 ---
 
-## 기본적인 Docker와 Nodejs 사용법은 안다고 가정하겠습니다. (설치, 명령어 등)
+## 기본적인 Docker 사용법은 안다고 가정하겠습니다. (설치, 명령어 등)
 
 ![image000](../images{{ page.id }}/000.jpg)
 
-현재 나는 접속하면 hello world를 띄워주는 서비스를 제공 하고 있습니다.
+현재 저는 접속하면 hello world를 띄워주는 서비스를 제공 하고 있습니다.
 이 서비스는 AWS EC2와 nodejs를 사용하고 있습니다.
 ECS라는 서비스를 사용 하려고 합니다.
 
@@ -53,14 +53,22 @@ Dockerfile이 있는 위치에서 위의 명령어를 통해 이름이 `main-ima
 ![image001](../images{{ page.id }}/001.jpg)
 [AWS ECS](https://ap-northeast-2.console.aws.amazon.com/ecs)에 들어가서 `시작하기`를 누릅니다.
 
+---
+
 ![image002](../images{{ page.id }}/002.jpg)
 우리는 둘 다 할 것이므로 둘다 체크하고 넘어갑니다.
+
+---
 
 ![image003](../images{{ page.id }}/003.jpg)
 리포지토리 이름은 그냥 `test`라고 했습니다.
 
+---
+
 ![image004](../images{{ page.id }}/004.jpg)
 위의 명령어를 통해 리포지토리에 로그인 하고 이미지를 푸쉬하라는데 밑에 자세히 설명하도록 하겠습니다.
+
+---
 
 일단 AWS CLI를 설치해야 합니다.
 
@@ -74,6 +82,8 @@ $ brew install awscli
 ![image005](../images{{ page.id }}/005.jpg)
 그다음에 설정을 해줘야 하는데 `aws configure` 명령어를 통해
 IAM User의 Access ID와 Secret Key를 위 처럼 입력해주시면 됩니다.
+
+---
 
 이제 AWS CLI 설정은 끝났습니다.
 아까 페이지의 명령어를 차례대로 따라하시면 됩니다.
@@ -104,8 +114,10 @@ $ docker push 123456789123.dkr.ecr.ap-northeast-2.amazonaws.com/test:latest
 이에 주의하면서 위의 명령어를 입력하면 아래와 같이 업로드가 진행됩니다.
 
 ![image010](../images{{ page.id }}/010.jpg)
-위으 명령어를 입력하면 위와 같이 우리가 만들어 놓은 이미지가 리포지토리에 푸쉬됩니다.
+위의 명령어를 입력하면 위와 같이 우리가 만들어 놓은 이미지가 리포지토리에 푸쉬됩니다.
 그 다음에 페이지의 다음 단계로 넘어갑니다.
+
+---
 
 ![image011](../images{{ page.id }}/011.jpg)
 작업 정의 이름을 `test-task-definition`으로
@@ -115,6 +127,8 @@ $ docker push 123456789123.dkr.ecr.ap-northeast-2.amazonaws.com/test:latest
 Load Balancer의 포트 번호가 이미 사용 중이라고 해서 에러가 납니다.
 여기서 0의 의미는 자동으로 할당한다는 의미 입니다.
 
+---
+
 ![image012](../images{{ page.id }}/012.jpg)
 ![image013](../images{{ page.id }}/013.jpg)
 서비스 이름을 `test-service`라고 지었습니다.
@@ -122,20 +136,30 @@ Load Balancer의 포트 번호가 이미 사용 중이라고 해서 에러가 �
 강제로 Load Balancer를 사용 하는 것으로 되어 있습니다.
 그리고 넘어갑니다.
 
+---
+
 ![image014](../images{{ page.id }}/014.jpg)
 자신이 원하는 설정 하시고 넘어갑니다.
+
+---
 
 ![image015](../images{{ page.id }}/015.jpg)
 ![image016](../images{{ page.id }}/016.jpg)
 `인스턴스 시작 및 서비스 실행`을 누릅니다
+
+---
 
 ![image017](../images{{ page.id }}/017.jpg)
 그러면 ELB, VPC, EC2등 다양한 것들을 설정합니다.
 이 작업은 몇 분 정도 걸립니다.
 작업이 끝나면 서비스 보기를 누릅니다.
 
+---
+
 ![image019](../images{{ page.id }}/019.jpg)
 위와 같이 나오면 성공입니다.
+
+---
 
 ### 2\. AutoScaling 설정하기
 
@@ -144,16 +168,24 @@ Load Balancer의 포트 번호가 이미 사용 중이라고 해서 에러가 �
 아직 아무 것도 없다고 뜹니다.
 업데이트를 누릅니다.
 
+---
+
 ![image021](../images{{ page.id }}/021.jpg)
 그냥 넘어갑니다.
 
+---
+
 ![image022](../images{{ page.id }}/022.jpg)
 여기도 그냥 넘어갑니다.
+
+---
 
 ![image023](../images{{ page.id }}/023.jpg)
 저는 최소 작업 개수를 1개로 최대 작업 개수를 5개로 했습니다.
 다르게 해도 상관 없습니다.
 `조정 정책 추가`를 누릅니다.
+
+---
 
 ![image024](../images{{ page.id }}/024.jpg)
 정책 이름을 `test-policy`로 했습니다.
@@ -164,25 +196,39 @@ Load Balancer의 포트 번호가 이미 사용 중이라고 해서 에러가 �
 위에서 설정한 값의 의미는
 1개의 컨테이너가 1분 이상 평균 CPU 사용량이 1퍼센트가 넘으면 경보가 울린다는 의미입니다.
 
+---
+
 ![image025](../images{{ page.id }}/025.jpg)
 조정 작업에서 1 추가로 합니다.    
 이 의미는 경보가 울리면 작업을 1개 추가 한다는 의미 입니다.
 
+---
+
 ![image026](../images{{ page.id }}/026.jpg)
 그리고 다음 단계로 넘어갑니다.
+
+---
 
 ![image027](../images{{ page.id }}/027.jpg)
 ![image028](../images{{ page.id }}/028.jpg)
 서비스 업데이트를 누릅니다.
 
+---
+
 ![image029](../images{{ page.id }}/029.jpg)
 위와 같이 설정 작업이 끝날 때 까지 기다립니다.
+
+---
 
 ![image030](../images{{ page.id }}/030.jpg)
 EC2 대쉬보드로 들어가서 로드밸런서의 DNS 주소를 찾습니다.
 
+---
+
 ![image031](../images{{ page.id }}/031.jpg)
 정상적으로 페이지가 나오는 걸 확인 할 수 있습니다.
+
+---
 
 ![image032](../images{{ page.id }}/032.jpg)
 [CloudWatch](https://ap-northeast-2.console.aws.amazon.com/cloudwatch)에 들어가면
@@ -194,6 +240,8 @@ CPU 사용률을 늘려서 AutoScaling이 되는 것을 확인하기 위해서 �
 
 ![image033](../images{{ page.id }}/033.jpg)
 그러면 이렇게 경보가 생기는 것을 알 수 있습니다.
+
+---
 
 ![image034](../images{{ page.id }}/034.jpg)
 이제 ECS 대쉬보드로 넘어가면 AutoScaling이 된 것을 확인 할 수 있습니다.
