@@ -3,7 +3,7 @@ layout: post
 title:  "웹에 있는 오디오 재생하기"
 date:   2017-11-20 20:24:48 +0900
 description: Template description
-image: 'http://noverish.me/blog/assets/img/logos/swift.jpg'
+image: '/blog/assets/img/logos/swift.jpg'
 category: 'swift'
 tags:
 - ios

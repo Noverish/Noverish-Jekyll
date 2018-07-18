@@ -3,7 +3,7 @@ layout: post
 title:  "낮은 Swift 버전을 쓰는 라이브러리 CocoaPod에서 사용하기"
 date:   2018-01-22 19:50:44 +0900
 description: Template description
-image: 'http://noverish.me/blog/assets/img/logos/swift.jpg'
+image: '/blog/assets/img/logos/swift.jpg'
 category: 'ios'
 tags:
 - swift
