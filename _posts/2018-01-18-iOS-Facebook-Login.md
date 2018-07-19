@@ -3,7 +3,7 @@ layout: post
 title:  "Facebook으로 로그인하기"
 date:   2018-01-18 21:35:42 +0900
 description: Template description
-image: '/blog/assets/img/logos/swift.jpg'
+image: '/assets/img/logos/swift.jpg'
 category: 'ios'
 tags:
 - swift

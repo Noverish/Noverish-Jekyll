@@ -3,7 +3,7 @@ layout: post
 title:  "iOS에서 Naver Clova Speech Synthesis(CSS) 사용하기"
 date:   2017-11-21 12:54:38 +0900
 description: Template description
-image: '/blog/assets/img/logos/swift-clova.jpg'
+image: '/assets/img/logos/swift-clova.jpg'
 category: 'swift'
 tags:
 - ios

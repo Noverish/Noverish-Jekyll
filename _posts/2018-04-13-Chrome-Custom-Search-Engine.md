@@ -3,7 +3,7 @@ layout: post
 title:  "크롬에서 나만의 검색 엔진 사용하기"
 date:   2018-04-13 20:48:00 +0900
 description: Template description
-image: '/blog/assets/img/logos/chrome.jpg'
+image: '/assets/img/logos/chrome.jpg'
 category: 'tip'
 tags:
 - chrome

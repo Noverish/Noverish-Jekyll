@@ -3,7 +3,7 @@ layout: post
 title:  "Cell의 높이가 변하는 테이블 뷰 만들기"
 date:   2017-05-17 15:44:46 +0900
 description: Template description
-image: '/blog/assets/img/logos/swift.jpg'
+image: '/assets/img/logos/swift.jpg'
 category: 'swift'
 tags:
 - ios

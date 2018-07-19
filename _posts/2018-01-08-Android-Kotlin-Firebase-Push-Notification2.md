@@ -3,7 +3,7 @@ layout: post
 title:  "Kotlin과 Firebase를 사용하여 Android에 푸쉬 알림 보내기 - 서버편"
 date:   2018-01-08 19:34:20 +0900
 description: Template description
-image: '/blog/assets/img/logos/kotlin-firebase.jpg'
+image: '/assets/img/logos/kotlin-firebase.jpg'
 category: 'android'
 tags:
 - android

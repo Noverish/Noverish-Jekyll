@@ -3,7 +3,7 @@ layout: post
 title:  "EC2 Container Service(ECS) 사용하기 + AutoScaling"
 date:   2018-01-30 16:31:30 +0900
 description: Template description
-image: '/blog/assets/img/logos/ecs.jpg'
+image: '/assets/img/logos/ecs.jpg'
 category: 'server'
 tags:
 - aws

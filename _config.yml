@@ -2,7 +2,7 @@
 title: Noverish Blog
 email: embrapers273@gmail.com
 description:  Noverish's iOS & Server development story blog
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://noverish.me" # the base hostname & protocol for your site
 google_analytics: "UA-XXXXXXXX-X"
 

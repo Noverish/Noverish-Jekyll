@@ -3,7 +3,7 @@ layout: post
 title:  "APEX로 AWS Lambda 개발하기"
 date:   2018-02-27 16:10:24 +0900
 description: Template description
-image: '/blog/assets/img/logos/lambda-apex.jpg'
+image: '/assets/img/logos/lambda-apex.jpg'
 category: 'server'
 tags:
 - aws
