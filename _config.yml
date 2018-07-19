@@ -36,4 +36,4 @@ links:
     url: /contact/
 
 # Exclude my node related stuff
-exclude: ['package.json', 'src', 'node_modules', 'logo-materials']
+exclude: ['src', 'logo-materials', 'Gemfile', 'Gemfile.lock']
